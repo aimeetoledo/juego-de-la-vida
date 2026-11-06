@@ -14,8 +14,13 @@ Los autómatas celulares son modelos matemáticos y computacionales utilizados p
 Uno de los principales retos para comprender su funcionamiento es visualizar cómo evolucionan estos sistemas con el paso del tiempo y cómo las interacciones entre sus elementos pueden generar comportamientos inesperados.
 Por esta razón, surge la necesidad de desarrollar una herramienta que permita representar gráficamente el comportamiento de un autómata celular y facilitar la experimentación con sus diferentes estados.
 
+!(imagen.jpeg)
+!(imagen1.jpeg)
+
 ## Objetivos
 El objetivo general de este trabajo consiste en desarrollar una aplicación interactiva y funcional del Juego de la Vida de Conway utilizando Python y Streamlit, asegurando la reproducibilidad del código mediante control de versiones GitHub. Como objetivos principales, buscamos implementar reglas lógicas de nacimiento, supervivencia y muerte de las celdas en un archivo modular, así como incorporar una interfaz de renderizado gráfico avanzado mediante Matplotlib y la selección de patrones iniciales predefinidos, como el Glider.
+
+!(imagen2.jpeg)
 
 ## Solución 
 Aquí integramos los cambios de los archivos app.py y game_logic.py:
@@ -37,4 +42,3 @@ Ejemplo:
    ```bash
    pip install -r requirements.txt
    streamlit run app.py
-   
