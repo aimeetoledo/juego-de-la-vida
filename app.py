@@ -6,7 +6,7 @@ from game_logic import actualizar_grid, crear_grid_aleatorio, crear_grid_vacio
 st.set_page_config(page_title="El Juego de la Vida", layout="centered")
 
 st.title("El Juego de la Vida de Conway")
-st.write("Proyecto colaborativo desarrollado por Aimeé y Lizbeth para la universidad.")
+st.write("Proyecto colaborativo desarrollado por Aimeé y Lizbeth para la materia de programación.")
 
 # Sidebar para controles
 st.sidebar.header("Configuracion del Juego")
