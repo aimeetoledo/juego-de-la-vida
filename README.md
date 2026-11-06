@@ -6,6 +6,9 @@ Proyecto parcial desarrollado en Python utilizando Streamlit para la visualizaci
 * **Aimeé Toledo**
 * **Lizbeth Graciela Cervera Romero**
 
+## Resumen
+EL presente proyecto consiste en el desarrollo de una aplicacion interactiva basada en el Juego de la Vida de Conway.
+El sistema simula el comportamiento de una problación celular dentro de una cuadrícula bidimensional, donde cada célula puede encontrarse en dos estados: viva o muerta.Su evolución está determinada por un conjunto de reglas que consideran el estadi de sus células vecinas.
 ## 📂 Estructura del Proyecto
 * **`game_logic.py`**: Contiene la lógica central del autómata celular y las reglas de transición de Conway.
 * **`app.py`**: Interfaz de usuario interactiva desarrollada con Streamlit.
