@@ -34,3 +34,15 @@ def actualizar_grid(grid):
                     nueva_grid[r, c] = 1
                     
     return nueva_grid
+
+def crear_grid_glider(filas, columnas):
+    """Crea una cuadrícula con un patrón de planeador (Glider)."""
+    grid = np.zeros((filas, columnas), dtype=int)
+    if filas >= 5 and columnas >= 5:
+        # Coordenadas iniciales del Glider clásico
+        grid[1, 2] = 1
+        grid[2, 3] = 1
+        grid[3, 1] = 1
+        grid[3, 2] = 1
+        grid[3, 3] = 1
+    return grid
