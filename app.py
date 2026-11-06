@@ -41,7 +41,7 @@ if reset_btn:
 container = st.empty()
 
 # Bucle de ejecución si está activo
-while st.session_state.corriendo:
+if st.session_state.corriendo:
     st.session_state.grid = actualizar_grid(st.session_state.grid)
     
     # Mostrar la matriz con texto limpio (O para vivo, . para muerto)
@@ -50,7 +50,7 @@ while st.session_state.corriendo:
     
     time.sleep(velocidad)
     st.rerun()
-
-# Vista estática cuando está pausado
-representacion = "\n".join(["".join(["O " if celda == 1 else ". " for celda in fila]) for fila in st.session_state.grid])
-container.text(representacion)
+else:
+    # Vista estática cuando está pausado
+    representacion = "\n".join(["".join(["O " if celda == 1 else ". " for celda in fila]) for fila in st.session_state.grid])
+    container.text(representacion)
